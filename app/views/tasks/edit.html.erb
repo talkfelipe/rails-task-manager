@@ -1,0 +1,11 @@
+<div class="container border mt-3 shadow align-items-center">
+  <h1>Edit Task</h1>
+  <%= simple_form_for @task do |f| %>
+    <%= f.input :title %>
+    <%= f.input :details %>
+    <%= f.submit class: 'btn btn-primary m-3' %>
+  <% end %>
+</div>
+<div class="container mt-3 align-items-center">
+  <%= link_to "My tasks", "/tasks", class: "btn btn-primary "  %>
+</div>
